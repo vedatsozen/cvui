@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+body {
+    text-align: center;
+    background-color: gainsboro;
+}
+
+*  {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+      }
+
+
+#container {
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    height:640px;
+    width:550px;
+    padding: 10px;
+    border: 2px solid white;
+    position: relative;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+
+}
+
+#studentamountdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    left:5%;
+}
+
+p#studentamount {
+    display: block;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: gainsboro;
+
+}
+
+img#profile {
+    height:200px;
+    width:200px;
+    position:absolute;
+    top:-50px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+#hourlyratediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 5px;
+    right:5%;
+}
+
+p#hourlyrate {
+    display: block;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: gainsboro;
+
+}
+
+p#name {
+    font-size: 25px;
+    font-weight: bold;
+    position:absolute;
+    top:140px;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+p#job {
+    font-size: 15px;
+    position:absolute;
+    top:190px;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+div#icons {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top:240px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+
+}
+
+#icons > img {
+    height: 40px;
+    width: 40px;
+    background-color:gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#icons > img:hover {
+    transition: 500ms ease;
+    border: 2px solid black;
+}
+
+div#links {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top:320px;
+    left: 50%;
+    transform: translate(-50%);
+    width:100%;
+    position: relative;
+    background-color: transparent;
+}
+
+div#links > button.link {
+    height: 50px;
+    width: 33%;
+    cursor:pointer;
+    border:none;
+    background-color: transparent;
+}
+
+button#sliding {
+    display:block;
+    height:50px;
+    width:33%;
+    background-color: gainsboro;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 500ms ease;
+  
+}
+
+#tabcontainer {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%);
+    height: fit-content;
+    width:90%;
+}
+
+#tabcontainer > div {
+    text-align: center;
+}
+
+#tabcontainer > div > p {
+    text-align: center;
+    width:90%;
+    margin: auto;
+}
+
+#aboutme {
+
+display: block;
+}
+
+#skillsdiv {
+    display: none;
+}
+
+#skillsdiv > ul {
+    padding: 0px;
+    list-style: none;
+}
+
+#reviewsdiv {
+    display: none;
+}
+
+button#bookmentoring {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+}

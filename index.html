@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="container">
+
+<div id="studentamountdiv">
+<p id="studentamount">1760</p>
+<p>Students</p>
+</div>
+
+<img id="profile" src="profilfoto.jpg">
+
+<div id="hourlyratediv">
+<p id="hourlyrate">149$</p>
+<p>Hourly Rate</p>
+</div>
+
+<p id="name">Vedat Sözen</p>
+<p id="job">Front End Developer</p>
+
+<div id="icons">
+    <img src="github.png">
+    <img src="instagram.svg">
+    <img src="twitter.png">
+    <img src="instagram.svg">
+    <img src="youtube.png"> 
+</div>
+
+<div id="links">
+    <button class="link" id="aboutmebtn">About Me</button>
+    <button class="link" id="skillsbtn">Skills</button>
+    <button class="link" id="reviewsbtn">Reviews</button>
+    <button id="sliding"></button>
+
+</div>
+
+<div id="tabcontainer">
+    <div id="aboutmediv">
+        <p>Hello My Name is Vedat.
+             I am Front End Developer. 
+             I develop web sites by using html, css, tailwindcss, javascript and jquery.
+            I have 5+ years experience as Self Taught Developer.
+            I can help you about web development.
+            </p>
+    </div>
+    <div id="skillsdiv">
+        <h1>Skills</h1>
+        <ul>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>TAILWIND CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JQUERY</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+    <div id="reviewsdiv">
+        <p>Review</p>
+    </div>
+</div>
+
+<button id="bookmentoring">Book Mentoring</button>
+
+</div>
+
+
+<script>
+
+let aboutmebtn = document.getElementById("aboutmebtn");
+let skillsbtn = document.getElementById("skillsbtn");
+let reviewsbtn = document.getElementById("reviewsbtn");
+let sliding = document.getElementById("sliding");
+
+let aboutmediv = document.getElementById("aboutmediv");
+let skillsdiv = document.getElementById("skillsdiv");
+let reviewsdiv = document.getElementById("reviewsdiv");
+
+aboutmebtn.addEventListener("click", function() {
+sliding.style.left = "0px";
+aboutmediv.style.display = "block";
+skillsdiv.style.display = "none";
+reviewsdiv.style.display = "none";
+})
+
+skillsbtn.addEventListener("click", function() {
+sliding.style.left = "33%";
+aboutmediv.style.display = "none";
+skillsdiv.style.display = "block";
+reviewsdiv.style.display = "none";
+})
+
+
+reviewsbtn.addEventListener("click", function() {
+sliding.style.left = "66%";
+aboutmediv.style.display = "none";
+skillsdiv.style.display = "none";
+reviewsdiv.style.display = "block";
+})
+
+
+
+</script>
+
+</body>
+</html>
