@@ -32,16 +32,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    height: fit-content;
     width: fit-content;
     position: absolute;
     top: 5px;
     left:5%;
+
 }
 
 p#studentamount {
     display: block;
-    padding: 5px;
+    padding-top: 4px;
+    padding-bottom: 15px;
     font-size: 15px;
     letter-spacing: 3px;
     background-color: gainsboro;
@@ -65,7 +67,7 @@ img#profile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    height: fit-content;
     width: fit-content;
     position: absolute;
     top: 5px;
@@ -74,7 +76,8 @@ img#profile {
 
 p#hourlyrate {
     display: block;
-    padding: 5px;
+    padding-top: 4px;
+    padding-bottom: 15px;
     font-size: 15px;
     letter-spacing: 3px;
     background-color: gainsboro;
@@ -88,8 +91,18 @@ p#name {
     top:140px;
     left: 50%;
     transform: translate(-50%);
+ 
 
+}
 
+#verified {
+    position:absolute;
+    top:148px;
+    left:67%;
+    transform: translate(-50%);
+    height: 40px !important;
+    width:40px !important;
+    margin-top: 10px;
 }
 
 p#job {
@@ -121,15 +134,15 @@ div#icons {
     height: 40px;
     width: 40px;
     background-color:gainsboro;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
 }
 
 #icons > img:hover {
     transition: 500ms ease;
-    border: 2px solid black;
+    border: 1px solid grey;
 }
 
 div#links {
@@ -218,4 +231,11 @@ button#bookmentoring {
     left: 50%;
     transform: translate(-50%);
     padding: 10px;
+}
+
+img.icon {
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    transform: translateY(8px);
 }
